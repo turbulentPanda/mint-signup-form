@@ -50,3 +50,59 @@ table {
 /**** END CSS RESET: UNIQUE STYLING BEGINS HERE ****/
 
 /******** GENERAL PAGE SETUP ********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.page-container {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 5fr 1fr 60px;
+    min-height: 100%;
+    width: 100%;
+}
+
+/******** HEADER ********/
+.header {
+    border: 1px solid mistyrose;
+    grid-area: header;
+    height: 100%;
+    width: 100%;
+}
+
+/******** MAIN: FORM CONTAINER ********/
+.main {
+    border: 1px solid mistyrose;
+    grid-area: main;
+    height: 100%;
+    width: 100%;
+}
+
+/******** ASIDE: LEGAL AND PRIVACY INFO ********/
+.legal-privacy-info {
+    border: 1px solid mistyrose;
+    grid-area: aside;
+    height: 100%;
+    width: 100%;
+}
+
+/******** FOOTER ********/
+.footer {
+    border: 1px solid mistyrose;
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+}

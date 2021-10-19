@@ -50,6 +50,12 @@ table {
 /**** END CSS RESET: UNIQUE STYLING BEGINS HERE ****/
 
 /******** GENERAL PAGE SETUP ********/
+:root {
+    --main-background-color: #eceef1;
+    --utility-accent-color: #0077c5;
+    --heading-text-color: #393a3d;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;

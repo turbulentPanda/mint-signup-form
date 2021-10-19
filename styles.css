@@ -58,6 +58,7 @@ table {
 
 * {
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -83,10 +84,41 @@ body {
 
 /******** HEADER ********/
 .header {
+    align-items: center;
+    background: var(--main-background-color);
     border: 1px solid mistyrose;
+    display: flex;
     grid-area: header;
     height: 100%;
+    justify-items: center;
+    justify-content: center;
+    padding: 10px 20px;
     width: 100%;
+}
+
+.login-details {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.login-details > * {
+    font-size: 12px;
+}
+
+.sign-in {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 10px 15px;
+}
+
+.signin-styling {
+    display: flex;
+    align-items: center;
+}
+
+.signin-styling > img {
+    margin-right: 10px;
 }
 
 /******** MAIN: FORM CONTAINER ********/

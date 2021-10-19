@@ -149,6 +149,7 @@ body {
 
 /******** MAIN: FORM CONTAINER ********/
 .main {
+    background: var(--main-background-color);
     border: 1px solid mistyrose;
     grid-area: main;
     height: 100%;

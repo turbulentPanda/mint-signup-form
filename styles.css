@@ -63,6 +63,18 @@ table {
     padding: 0;
 }
 
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    color: var(--utility-accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 
 body {
     height: 100vh;
@@ -92,11 +104,15 @@ body {
     height: 100%;
     justify-items: center;
     justify-content: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     width: 100%;
 }
 
 .login-details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
     margin-left: auto;
     margin-right: 20px;
 }
@@ -105,11 +121,17 @@ body {
     font-size: 12px;
 }
 
-.sign-in {
+.sign-in-button {
+    background-color: var(--utility-accent-color);
+    border: 1px solid #4c4c4c;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
     display: grid;
+    font-size: 13.5px;
     grid-template-columns: 1fr;
     place-items: center;
-    padding: 10px 15px;
+    padding: 5px 20px;
 }
 
 .signin-styling {
@@ -117,8 +139,12 @@ body {
     align-items: center;
 }
 
+.signin-reminder {
+    color: #505050;
+}
+
 .signin-styling > img {
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 /******** MAIN: FORM CONTAINER ********/

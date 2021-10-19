@@ -98,7 +98,6 @@ body {
 .header {
     align-items: center;
     background: var(--main-background-color);
-    border: 1px solid mistyrose;
     display: flex;
     grid-area: header;
     height: 100%;
@@ -121,20 +120,24 @@ body {
     font-size: 12px;
 }
 
-.sign-in-button {
+.button {
     background-color: var(--utility-accent-color);
     border: 1px solid #4c4c4c;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
     display: grid;
-    font-size: 13.5px;
     grid-template-columns: 1fr;
     place-items: center;
+}
+
+.sign-in-button {
+    font-size: 13.5px;
     padding: 5px 20px;
 }
 
-.signin-styling {
+.signin-styling,
+.create-account-container {
     display: flex;
     align-items: center;
 }
@@ -148,13 +151,134 @@ body {
 }
 
 /******** MAIN: FORM CONTAINER ********/
+
+
 .main {
     background: var(--main-background-color);
-    border: 1px solid mistyrose;
+    display: grid;
     grid-area: main;
     height: 100%;
+    place-items: center;
     width: 100%;
 }
+
+
+
+/**** Signup Form ****/
+.signup-form {
+    background: #fff;
+    border: 1px solid #c7c7c7;
+    display: grid;
+    grid-template-areas: 
+        "form-header"
+        "form-user-details"
+        "form-create-account"
+        "form-recaptcha";
+    grid-template-columns: 1fr;
+    width: 380px;
+}
+
+.signup-form > * {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+}
+/* Form Header */
+.form-header {
+    text-align: center;
+    margin: 30px;
+}
+
+.form-heading {
+    color: var(--heading-text-color);
+    font-size: 24px;
+}
+
+.form-user-details,
+.form-create-account {
+    margin: 0 20px;
+}
+
+.form-description {
+    color: var(--heading-text-color);
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+/* Form Body */
+.form-label {
+    color: #404040;
+    font-size: 14px;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    border: 1px solid #c1c5c8;
+    border-radius: 3px;
+    font-size: 16.8px;
+    height: 34px;
+    margin-bottom: 34px;
+    min-width: 160px;
+    padding: 5px 10px;
+}
+
+.form-label > span {
+    font-weight: 100;
+}
+
+.phone-rates {
+    color: #444;
+    font-size: 10px;
+    margin-top: -28px;
+    margin-bottom: 34px;
+}
+
+.password-container {
+    border: 1px solid #c1c5c8;
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    height: 34px;
+    margin-bottom: 34px;
+    padding: 5px 10px;
+    place-items: center;
+}
+
+.password-container > input {
+    border: none;
+    height: 92.5%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.signup-button {
+    border: none;
+    height: 44px;
+}
+
+.terms-of-service {
+    color: #757575;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 18px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Form Footer */
+.form-recaptcha {
+    background: var(--main-background-color);
+    color: #757575;
+    font-size: 10px;
+    display: grid;
+    padding: 20px 30px;
+    place-items: center;
+}
+
+
 
 /******** ASIDE: LEGAL AND PRIVACY INFO ********/
 .legal-privacy-info {

@@ -64,6 +64,7 @@ table {
 }
 
 html {
+    background: var(--main-background-color);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -327,15 +328,39 @@ body {
 
 /******** ASIDE: LEGAL AND PRIVACY INFO ********/
 .legal-privacy-info {
-    border: 1px solid mistyrose;
+    background: var(--main-background-color);
+    display: grid;
+    font-size: 12px;
+    gap: 5px;
     grid-area: aside;
+    grid-template-areas: 
+        "legal-privacy-links"
+        "trademark-info";
+    grid-template-rows: min-content 1fr;
     height: 100%;
+    margin-top: 34px;
     width: 100%;
 }
+
+.legal-privacy-links {
+    align-self: start;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.trademark-info {
+    grid-area: trademark-info;
+    justify-self: center;
+    line-height: 18px;
+    text-align: center;
+}
+
 
 /******** FOOTER ********/
 .footer {
     border: 1px solid mistyrose;
+    display: grid;
     grid-area: footer;
     height: 100%;
     width: 100%;

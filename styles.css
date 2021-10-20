@@ -132,6 +132,10 @@ body {
     place-items: center;
 }
 
+button:hover {
+    background-color: #1c79c8;
+}
+
 .sign-in-button {
     font-size: 13.5px;
     padding: 5px 20px;
@@ -359,9 +363,12 @@ body {
 
 /******** FOOTER ********/
 .footer {
-    border: 1px solid mistyrose;
+    background: #fff;
     display: grid;
+    font-size: 13px;
     grid-area: footer;
     height: 100%;
+    padding-left: 20px;
+    place-items: center start;
     width: 100%;
 }

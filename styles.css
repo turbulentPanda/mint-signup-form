@@ -157,18 +157,63 @@ body {
     background: var(--main-background-color);
     display: grid;
     grid-area: main;
+    grid-template-areas:
+        "header-logos"
+        "form";
     height: 100%;
     place-items: center;
     width: 100%;
 }
 
+/**** Header - Logos ****/
+.logos {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        "intuit-logo"
+        "other-logos";
+    place-items: center;
+    margin-bottom: 20px;
+}
 
+.intuit-sprite {
+	background: url('assets/logos.png') no-repeat 0 0;
+    grid-area: intuit-logo;
+	width: 115px;
+	height: 34px;
+}
 
+.logo-container {
+    display: grid;
+    gap: 10px;
+    grid-area: other-logos;
+    grid-template-areas:
+        "mint-sprite  quickbooks-sprite  turbotax-sprite";
+}
+
+.mint-sprite {
+    background: url('assets/logos.png') no-repeat -254px -57px;
+	width: 64px;
+	height: 22px;
+}
+
+.quickbooks-sprite {
+    background: url('assets/logos.png') no-repeat -115px -57px;
+	width: 125px;
+	height: 22px;
+}
+
+.turbotax-sprite {
+    background: url('assets/logos.png') no-repeat 0 -57px;
+	width: 101px;
+	height: 22px;
+}
 /**** Signup Form ****/
 .signup-form {
     background: #fff;
     border: 1px solid #c7c7c7;
     display: grid;
+    grid-area: form;
     grid-template-areas: 
         "form-header"
         "form-user-details"
